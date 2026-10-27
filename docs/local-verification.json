@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-10-27T09:30:24.095385+00:00",
+  "scope": "Local controlled production-entrypoint tests and linter/schema; NOT live GenVM consensus",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "source_sha256": "e71ae96a172f9f447fb98fc82b85c4fd902b826b8284d4418c6c35cc1d12e3cb",
+  "samples": {
+    "fundraising.json": "9301cbed73eefa210fe867b3ad2835f8f9ed100c6c9444f14edacf21b57ffa04",
+    "inseparable.json": "ab76b5b4598be7d68888266b07d32b68bb266708d4f74113a02f1e1174daa6b1"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--tb=short",
+        "-p",
+        "no:cacheprovider",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "........................................................................ [ 77%]\n.....................                                                    [100%]\n93 passed in 0.20s\n",
+      "stderr": "WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks\nINFO: Clearing artifacts directory: artifacts\nINFO: Using the following configuration:\nINFO:   RPC URL: http://127.0.0.1:4000/api\nINFO:   Selected Network: localnet\nINFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']\nINFO:   Selected chain type: localnet\nINFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury\nINFO:   Contracts directory: contracts\nINFO:   Artifacts directory: artifacts\nINFO:   Environment: .env\nINFO:   Default wait interval: 3000 ms\nINFO:   Default wait retries: 50\nINFO:   Leader only mode: False\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "genvm_linter.cli",
+        "check",
+        "contracts/packet_vote.py"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\u2713 Lint passed (3 checks)\n\u2713 Validation passed\n  Contract: PacketVote\n  Methods: 12 (4 view, 8 write)\n  \u2139 py-genlayer: a newer runner is available (1zr6nqk597d97kg0dyxg0shhrykx5v02zjgnyrajapy4wlqvfvwh). See https://github.com/genlayerlabs/genvm/releases for changes.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "genvm_linter.cli",
+        "schema",
+        "contracts/packet_vote.py",
+        "-o",
+        "docs/schema.json"
+      ],
+      "exit_code": 0,
+      "stdout": "\nSchema written to docs/schema.json\n",
+      "stderr": ""
+    }
+  ]
+}

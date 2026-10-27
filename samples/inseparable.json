@@ -1,0 +1,9 @@
+{
+  "fixture_kind": "synthetic onchain group declaration; not an official DAO document",
+  "clauses": [
+    {"id": "power", "text": "The community gives the team permission to distribute the event tickets."},
+    {"id": "scope", "text": "That permission applies only to the one named charity event and includes the duty to return all undistributed tickets."}
+  ],
+  "expected_semantic_state": "UNSPLITTABLE",
+  "not_claimed": "Actual external ticket rights. A single packet is intentionally not substituted because this contract's product is a validated two-packet split."
+}

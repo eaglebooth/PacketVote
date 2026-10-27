@@ -1,0 +1,3 @@
+contracts/*.py text eol=lf
+docs/live-evidence/** -text
+tests/fixtures/** -text

@@ -1,0 +1,7 @@
+{
+  "name": "packetvote-verification",
+  "private": true,
+  "type": "module",
+  "scripts": { "preflight": "node scripts/live.mjs preflight", "test:live": "node scripts/live.mjs lifecycle" },
+  "devDependencies": { "genlayer-js": "1.1.8" }
+}

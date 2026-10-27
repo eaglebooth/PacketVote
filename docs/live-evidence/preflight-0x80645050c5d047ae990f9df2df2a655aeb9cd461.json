@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-27T09:12:45.354Z",
+  "address": "0x80645050c5d047Ae990f9df2DF2A655aEb9Cd461",
+  "chain_id": 61999,
+  "source_sha256": "e71ae96a172f9f447fb98fc82b85c4fd902b826b8284d4418c6c35cc1d12e3cb",
+  "deployed_sha256": "e71ae96a172f9f447fb98fc82b85c4fd902b826b8284d4418c6c35cc1d12e3cb",
+  "byte_for_byte": true,
+  "version": {
+    "custody": false,
+    "external_execution": false,
+    "max_clauses": 4,
+    "max_packets": 2,
+    "name": "PacketVote",
+    "policy": "packetvote/counterfactual-bipartition-v2",
+    "version": "0.2.1"
+  }
+}

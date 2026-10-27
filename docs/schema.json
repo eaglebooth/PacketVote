@@ -1,0 +1,179 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "accept_source": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "source_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "cancel": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "cast_vote": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "plan_digest",
+          "string"
+        ],
+        [
+          "choices_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "compile_partition": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "source_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "create_proposal": {
+      "params": [
+        [
+          "local_id",
+          "string"
+        ],
+        [
+          "clauses_json",
+          "string"
+        ],
+        [
+          "voters_json",
+          "string"
+        ],
+        [
+          "deadline",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "expire": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "finalize": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_adopted": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_proposal": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_version": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_vote": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "voter",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_ballot": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "plan_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    }
+  }
+}
